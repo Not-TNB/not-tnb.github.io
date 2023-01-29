@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>steam2023</title>
+  <link href="resultsStyle.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <div id="navbarAlt" class="noSelect">  
+    <ul>
+      <li data-aos="fade-down"><a class="underlineHover" href="index.html">
+        <span class="material-icons material-icons-round .material-icons.md-24">
+          home
+        </span>
+      </a></li>
+
+      <li data-aos="fade-down" data-aos-delay="100"><a class="underlineHover" href="research.html">
+        <span class="material-icons material-icons-round .material-icons.md-24">
+          search
+        </span>
+      </a></li>
+
+      <li data-aos="fade-down" data-aos-delay="200"><a class="underlineHover" href="procedure.html">
+        <span class="material-icons material-icons-round .material-icons.md-24">
+          code
+        </span>
+      </a></li>
+
+      <li data-aos="fade-down" data-aos-delay="300"><a id="thisPage">
+        <span class="material-icons material-icons-round .material-icons.md-24">
+          assignment
+        </span>
+      </a></li>
+    </ul>
+  </div>  
+
+  <div id="navbar" class="noSelect">
+    <ul>
+      <li data-aos="fade-down"><a class="underlineHover" href="index.html">about</a></li>
+      <li data-aos="fade-down" data-aos-delay="100"><a class="underlineHover" href="research.html">research</a></li>
+      <li data-aos="fade-down" data-aos-delay="200"><a class="underlineHover" href="procedure.html">procedure</a></li>
+      <li data-aos="fade-down" data-aos-delay="300"><a id="thisPage">results</a></li>
+    </ul>
+  </div>
+
+  <div id="title" class="noSelect">
+    <h1 data-aos="fade-up"><b>Results</b></h1>
+    <p data-aos="fade-up" style="font-size: 1em"><i>steam2023</i></p>
+    <canvas id="particleLayer" style="position: absolute; width: 100%; height: 100%; z-index: -1;"></canvas>
+  </div>
+
+  <div id="footer">
+    <div>
+      <p><span class="highlight">
+      <b>STEAM PROJECT 2023</b><br>
+      SAMPOERNA ACAD. MDN<br>
+      GRADE 10
+      </span></p>
+      <a style="font-size: 0.8em;" href="https://github.com/Not-TNB/not-tnb.github.io">Link to website code </a>
+    </div>
+
+    <svg id="signatureImg" width="221" height="223" viewBox="0 0 221 223" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        id="signature" 
+        d="M35.0716 81.6147C30.6454 82.0573 27.5619 82.5803 32.5025 76.976C42.1975 65.9787 54.0745 59.5453 67.6135 54.4251C79.6018 49.8913 90.3554 43.8678 101.797 38.2255C110.296 34.0341 97.744 37.3471 95.374 38.6537C84.9283 44.4122 74.28 56.7245 68.0417 66.6997C59.2435 80.768 56.6873 98.5654 54.6253 114.728C54.3895 116.576 52.42 138.51 55.9098 137.278C58.5125 136.36 59.3863 131.637 60.0489 129.571C62.6952 121.323 65.4942 113.283 69.3976 105.522C71.3562 101.627 78.0589 85.3092 84.384 85.1115C89.131 84.9632 84.9524 111.213 83.8844 114.228C80.1535 124.762 85.34 90.5533 92.234 81.7574C101.708 69.6693 104.123 91.6938 109.932 89.5361C113.333 88.2728 113.162 68.1231 113.429 65.7006C115.254 49.1711 116.343 32.4907 118.71 16.0313C118.844 15.1007 122.285 -4.30964 121.136 4.11356C118.378 24.3417 116.565 44.8252 114.428 65.1297C110.164 105.636 107.836 146.321 105.08 186.948C104.362 197.52 104.049 208.359 102.368 218.847C101.39 224.951 102.506 215.386 102.51 215.351C107.518 173.716 114.386 134.184 130.699 95.602C134.991 85.4502 125.762 86.2105 118.068 87.0383C75.511 91.6172 42.0035 115.871 10.7365 143.63C8.42973 145.678 -4.26963 158.326 5.88377 153.692C33.6914 141.001 59.2229 123.887 85.7399 108.804C115.102 92.1028 145.96 81.2249 178.656 73.051C191.522 69.8343 208.649 64.563 219.404 74.5497" 
+        stroke="#e6ebf2" 
+        stroke-width="3" 
+        stroke-linecap="round"
+      />
+    </svg>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+
+  <script src="particles.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

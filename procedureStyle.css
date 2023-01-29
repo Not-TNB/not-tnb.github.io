@@ -1,0 +1,152 @@
+@import 'mainStyle.css';
+
+#titleTxt {
+  width: 80%;
+}
+
+#title {
+  background: linear-gradient(90deg, rgba(49,230,174,0.25) 0%, transparent 50%, rgba(56,195,213,0.25) 100%), var(--bgD);
+}
+
+.segment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  box-sizing: border-box;
+  padding: 5%;
+  width: 100%;
+
+  background-color: var(--bg);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center center;
+
+  text-align: center;
+
+  border-top: 0.25em solid var(--contrast);
+}
+.segment div {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: row;
+}
+.segment div div {
+  background-color: var(--blackL);
+  padding: 2%;
+  margin: 0 2%;
+  border-radius: 1em;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center center;
+}
+.segment img {
+  max-width: 80%;
+  margin: 5%;
+}
+
+.important {
+  background: linear-gradient(160deg, #31e6ae50, #38c3d550);
+  border-radius: 1em;
+  border: 0.2em solid var(--contrast);
+  padding: 5%;
+  margin-top: 10%;
+}
+
+.important h1, .important p {
+  margin: 0;
+  padding: 0;
+}
+
+.embla {
+  max-width: 100%;
+  margin: auto;
+  overflow-x: hidden;
+  background-color: var(--blackL);
+  border: solid 0.1em var(--contrast);
+  border-image: linear-gradient(160deg, #31e6ae, #38c3d5);
+  border-image-slice: 1;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 70%;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.embla__slide img {
+  height: 85%;
+  width: auto;
+}
+
+img {
+  border: solid 0.1em var(--contrast);
+}
+
+#buttonLink {
+  font-size: 1em;
+  background-color: transparent;
+  color: var(--contrast);
+  font-family: 'Urbanist';
+  font-weight: 300;
+  padding: 0 0.5em;
+  outline: none;
+  border: 0.1em solid var(--contrast);
+  margin: 0.5em;
+}
+
+.bChart {
+  width: 80%;
+  margin: 0 10%;
+}
+.bChart img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 700px) {
+  #title {
+    background: linear-gradient(90deg, rgba(49,230,174,0.15) 0%, transparent 50%, rgba(56,195,213,0.15) 100%), var(--bgD);
+  }
+  .segment div {
+    flex-direction: column;
+  }
+  .segment div div {
+    margin: 5% 0;
+  }
+
+  .embla__slide img {
+    width: 100%;
+    height: auto;
+    flex: 0 0 120%;
+  }   
+
+  .bChart {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: scroll;
+  }
+  .bChart img {
+    width: 150%;
+    margin: 0 10%;
+  }
+}
+
+@media (max-aspect-ratio: 1) {
+  .embla__slide img {
+    width: 100%;
+    height: auto;
+  }  
+}

@@ -1,0 +1,170 @@
+@import 'mainStyle.css';
+
+#titleTxt {
+  width: 60%;
+}
+
+@-webkit-keyframes circling {
+  from { transform: rotate(0deg) translateX(3%) rotate(0deg); }
+  to   { transform: rotate(360deg) translateX(3%) rotate(-360deg); }
+}
+
+@keyframes circling {
+  from { transform: rotate(0deg) translateX(3%) rotate(0deg); }
+  to   { transform: rotate(360deg) translateX(3%) rotate(-360deg); }
+}
+
+@-webkit-keyframes fading {
+  0% { opacity: 100%; }
+  50% { opacity: 50%; }
+  100% { opacity: 100%; }
+}
+
+@keyframes fading {
+  0% { opacity: 100%; }
+  50% { opacity: 50%; }
+  100% { opacity: 100%; }
+}
+
+#topCirc, #bottomCirc {
+  position: absolute;   
+  height: 130%;
+  width: 130%; 
+}
+
+#topCirc {
+  top: -80%;
+  right: -50%;
+  -webkit-animation: 
+    circling 10s linear infinite, 
+    fading 7.3138609s cubic-bezier(.48,.95,.82,.59) infinite;
+          animation: 
+    circling 10s linear infinite, 
+    fading 7.3138609s cubic-bezier(.48,.95,.82,.59) infinite;
+}
+
+#bottomCirc {
+  bottom: -80%;
+  left: -50%;
+  -webkit-animation: 
+    circling 7s linear infinite, 
+    fading 12.8954626s cubic-bezier(.64,.36,.68,.73) infinite;
+          animation: 
+    circling 7s linear infinite, 
+    fading 12.8954626s cubic-bezier(.64,.36,.68,.73) infinite; 
+}
+
+#title p {
+  letter-spacing: 0.1em;
+  margin-right: -0.1em;
+}
+
+#driveQ {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#projGoal {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(160deg, #31e6ae50, #38c3d550);
+  background-blend-mode: multiply;
+}
+
+#memberList {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: url('membersBG.webp') var(--blackL);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 5% 0;
+}
+
+.member { 
+  margin: 2% 10%;
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 0.5em;
+}
+
+.member div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+  font-size: 0.75em;
+}
+
+.memberPfp {
+  margin: auto 5%;
+  width: 20%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+
+.memberName{
+  margin-bottom: 0.1em;
+}
+
+@media (min-aspect-ratio: 2/3) and (max-aspect-ratio: 4/5) {
+  #titleTxt {
+    width: 80%;
+  }  
+}
+
+@media (max-aspect-ratio: 1/1) {
+  #topCirc {
+    top: -50%;
+    right: -60%;
+  }
+  
+  #bottomCirc {
+    bottom: -50%;
+    left: -60%;
+  }
+}
+
+@media (max-width: 700px) {
+  #titleTxt {
+    width: 80%;
+  }
+
+  .member { 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    margin: 5% 15%;
+  }
+  .member div {
+    height: 50%;
+    width: auto;
+  }
+  .memberPfp {
+    width: 50%;
+    margin: 5% auto;
+  }
+
+  #signatureImg {
+    width: 50%;
+    height: auto;
+  }
+}

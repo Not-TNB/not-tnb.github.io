@@ -1,0 +1,7 @@
+@import 'mainStyle.css';
+
+#title {
+  background: url('resultsBG.webp') var(--blackL) left bottom;
+  background-blend-mode: multiply;
+  background-size: cover;
+}
